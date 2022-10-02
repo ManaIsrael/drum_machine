@@ -1,0 +1,77 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-container, .drum-pad, .pad-bank {
+  outline: 5px solid palegoldenrod;
+  position: relative;
+  width: 250px;
+  text-align: center;
+  background-color: lighten(orange, 20%);
+}
+.inner-container {
+  width: 400px;
+  padding: 2em;
+}
+
+.pad-bank {
+  width: 100px * 3 + 32;
+  height: 80px * 3 + 32;
+  display: inline-block;
+  margin: 10px;
+}
+
+.drum-pad {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.inner-select, .inner {
+  width: 23px;
+  height: 19px;
+  background: fuchsia;
+  border: 1px solid saddlebrown;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.outer-select, .select {
+  margin: auto;
+  border: 1px solid saddlebrown;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: saddlebrown;
+}
+
+.controls-container, p, .control {
+  width: 3rem;
+  height: 100px * 3 + 32;
+  display: inline-block;
+  margin: 40px 20px 0 10px;
+  vertical-align: top;
+}
+
+.control {
+  width: 80px;
+  margin: auto; 
+}
+p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
+  }
+}
